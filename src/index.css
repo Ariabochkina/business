@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: white;
+    color: rgb(125, 96, 72);
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+}
+.wrapper {
+    width: 1000px;
+    margin: 50px auto;
+}
+header {
+    position: relative;
+}
+header .logo {
+    font-weight: 600;
+    font-size: 60px;
+}
+header ul.nav {
+    float:  right;
+    list-style: none;
+    margin-top: 40px;
+}
+header ul.nav li{
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 200ms ease;
+}
+header ul.nav li:hover{
+    opacity: 0.5;
+}
+header .shop-cart-button{
+    float: right;
+    cursor: pointer;
+    transition: color, transform 300ms ease;
+    margin-top: 40px;
+}
+header .shop-cart-button:hover,
+header .shop-cart-button.active{
+    color:#cf9368;
+    transform: scale(1.5);
+}
+
+header .shop-cart {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 450px;
+    background: rgb(224, 221, 217);
+    -webkit-box-shadow: 8px 14px 12px 0px rgba(76, 61, 60, 1);
+    -moz-box-shadow: 8px 14px 12px 0px rgba(76, 61, 60, 1);
+    box-shadow: 8px 14px 12px 0px rgba(76, 61, 60, 1);
+    z-index: 1000;
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 3%;
+}
+
+header .shop-cart .empty p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+header .shop-cart .item{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+header .shop-cart .item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+header .shop-cart .item .delete-icon {
+    float: right;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    transition: color, transform 300ms ease;
+}
+header .shop-cart .item .delete-icon:hover {
+    color: #4c4141;
+    transform: scale(1.5);
+}
+header .presentation {
+    margin: 20px 0;
+    background: url('./img/sleepy_kitten_wp.webp') no-repeat; 
+    border-radius: 3%; 
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: white;
+    position: relative;
+
+}
+header .presentation::after{
+    content: 'Мяу';
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 300px;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+}
+header .presentation::before{
+    content: 'блять';
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    width: 300px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .item {
+    width: 47%;
+    margin-bottom: 10px;
+    background: rgb(235, 233, 230);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+    border-radius: 5%;
+}
+main h2, main p {
+    margin: 10px 20px;
+    color: #796a6a
+}
+main .add-to-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: rgb(182, 169, 156);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(59, 55, 55);
+    font-weight: 600;
+    transition: transform 500ms ease;
+}
+main .add-to-cart:hover {
+    transform: scale(1.5) translateY(-5px);
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
