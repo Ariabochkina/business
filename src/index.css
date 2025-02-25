@@ -102,20 +102,20 @@ header .presentation {
 
 }
 header .presentation::after{
-    content: 'Мяу';
+    content: 'Никакого';
     position: absolute;
     top: 100px;
-    left: 50px;
+    left: 20px;
     width: 300px;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
 }
 header .presentation::before{
-    content: 'блять';
+    content: 'проснутия';
     position: absolute;
     top: 150px;
-    left: 60px;
+    left: 35px;
     width: 300px;
     font-weight: 300;
     font-size: 20px;

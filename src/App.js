@@ -12,12 +12,12 @@ class App extends React.Component {
         {
           id: 1,
           title: "Луи",
-          description: "Жирни"
+          description: "Рыжий"
         },
         {
           id: 2,
           title: "Леон",
-          description: "Сери"
+          description: "Серый"
         }
       ]
     }
